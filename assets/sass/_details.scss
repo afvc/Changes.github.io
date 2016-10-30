@@ -1,4 +1,11 @@
- /*------------------------------------*\
+.z-top{
+z-index: 100;
+} 
+
+.z-down{
+z-index: 100;
+} 
+/*------------------------------------*\
   #TEXT_COLOR
 \*------------------------------------*/
  
@@ -42,6 +49,8 @@
      text-align: right;
  }
  
+.text-UP {text-transform: uppercase;}
+
  .text-note {
      color: $grey;
      font-style: italic;
@@ -74,6 +83,14 @@
  .no-padding {
      padding: 0px;
  }
+
+ .no-padding-top {
+     padding-top: 0px;
+ }
+
+.li-pad {
+    padding-bottom: 25px;
+}
  
  .no-margin {
      margin: 0px;
@@ -82,7 +99,23 @@
  .no-margin-top {
      margin-top: 0px;
  }
+
+.no-margin-bot {
+     margin-bottom: 0px;
+ }
  
+.sm-margin-top {
+     margin-top: 7vh;
+         
+         @include breakpoint ($min:xxs){margin-top: 0.5vh};
+ }
+.sm-indent{ 
+    text-indent: 50px;}
+
+.quote-indent{ 
+    text-indent: 50px;}
+
+
  .margin-bottom-lg {
    
        @include breakpoint ($min:xl){

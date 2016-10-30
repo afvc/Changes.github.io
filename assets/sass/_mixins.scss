@@ -4,9 +4,20 @@
 @mixin breakpoint($min: 0, $max: 0) {
     $type: type-of($min);
     @if $type==string {
+        
+          //small-mobile
+        @if $min==xxs {
+           @media screen and (max-width: 500px){
+                @content;
+            }
+        }
+        
+        
+        
+        
         //mobile
         @if $min==xs {
-            @media (max-width: 640px) {
+           @media screen and (min-width: 500px) and (max-width: 640px) {
                 @content;
             }
         }
