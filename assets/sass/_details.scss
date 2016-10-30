@@ -104,8 +104,14 @@ z-index: 100;
      margin-bottom: 0px;
  }
  
+.min-margin-top {
+  margin-top: 3vh;  
+}
 .sm-margin-top {
-     margin-top: 7vh;
+     @include breakpoint($min:sm) { 
+         margin-top: 7vh;}
+     @include breakpoint($min:md) { 
+         margin-top: 7vh;}
          
          @include breakpoint ($min:xxs){margin-top: 0.5vh};
  }
