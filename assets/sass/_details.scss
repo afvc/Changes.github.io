@@ -10,7 +10,7 @@ z-index: 100;
 \*------------------------------------*/
  
  .text-dark {
-   //  color: $main-color-dark;
+    color: $black;
  }
 
 .text-blue {
@@ -105,7 +105,8 @@ z-index: 100;
  }
  
 .min-margin-top {
-  margin-top: 3vh;  
+  margin-top: 3.7vh;  
+    @include breakpoint($min:xxs) { margin-top: 2vh;   }
 }
 .sm-margin-top {
      @include breakpoint($min:sm) { 
@@ -113,13 +114,28 @@ z-index: 100;
      @include breakpoint($min:md) { 
          margin-top: 7vh;}
          
-         @include breakpoint ($min:xxs){margin-top: 0.5vh};
+         @include breakpoint ($min:xxs){margin-top: 0};
  }
+
+.sm-margin-tx {
+     
+     @include breakpoint($min:md) { 
+         margin-top: 7vh;}
+     @include breakpoint($min:lg) { 
+         margin-top: 7vh;}
+     @include breakpoint($min:xl) { 
+         margin-top: 7vh;}
+         
+         @include breakpoint ($min:xxs){margin-top: 0vh};
+ }
+
 .sm-indent{ 
     text-indent: 50px;}
 
 .quote-indent{ 
-    text-indent: 50px;}
+    text-indent: 100px;
+//margin: 20px;
+}
 
 
  .margin-bottom-lg {
