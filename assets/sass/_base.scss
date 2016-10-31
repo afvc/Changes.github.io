@@ -36,12 +36,14 @@
     body {
         cursor: crosshair;
     }
-label{
-font-size: 1rem;
-}
-
-*:focus{
-outline:none;}
+    
+    label {
+        font-size: 1rem;
+    }
+    
+    *:focus {
+        outline: none;
+    } 
     /*------------------------------------*\
   #Responsive_window
 \*------------------------------------*/
@@ -110,5 +112,3 @@ outline:none;}
             color: $purple;
         }
     }
-    
-   

@@ -43,7 +43,7 @@
 .min-margin-top {
     margin-top: 3.7vh;
     @include breakpoint($min: xxs) {
-        margin-top: 2vh;
+        margin-top: 0vh;
     }
 }
 
