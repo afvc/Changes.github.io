@@ -68,7 +68,7 @@
             max-width: 100%;
         }
         @include breakpoint ($min: md) {
-            width: 700px;
+            width: 620px;
             max-width: 100%;
         }
         @include breakpoint ($min: lg) {
@@ -76,7 +76,7 @@
             max-width: 100%;
         }
         @include breakpoint ($min: xl) {
-            width: 1240px;
+            width: 1180px;
             max-width: 100%;
         }
     }
