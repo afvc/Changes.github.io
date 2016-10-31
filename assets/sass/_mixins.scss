@@ -11,10 +11,7 @@
                 @content;
             }
         }
-        
-        
-        
-        
+         
         //mobile
         @if $min==xs {
            @media screen and (min-width: 500px) and (max-width: 640px) {
@@ -65,31 +62,4 @@
         }
     }
 }
-
-@mixin backface-visibility($backface-visibility) {
-    -webkit-backface-visibility: $backface-visibility;
-    -moz-backface-visibility: $backface-visibility;
-    backface-visibility: $backface-visibility;
-}
-
-@mixin simple-transition($time) {
-    -webkit-transition: all $time;
-    -moz-transition: all $time;
-    transition: all $time;
-}
-
-
-@mixin scale($size) {
-   -webkit-transform: scale($size);
-    -moz-transform: scale($size);
-    -ms-transform: scale($size);
-    transform: scale($size);
-}
-
-
-@mixin translateXandY($translation) {
-    -webkit-transform: translateX($translation)translateY($translation);
-    -moz-transform: translateX($translation)translateY($translation);
-    -ms-transform: translateX($translation)translateY($translation);
-    transform: translateX($translation)translateY($translation);
-}
+ 

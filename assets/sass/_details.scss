@@ -1,174 +1,131 @@
-.z-top{
-z-index: 100;
-} 
-
-.z-down{
-z-index: 100;
-} 
 /*------------------------------------*\
-  #TEXT_COLOR
+  #Z_INDEX
 \*------------------------------------*/
- 
- .text-dark {
-    color: $black;
- }
 
-.text-blue {
-     color: $blue;
- }
+.z-top {
+    z-index: 100;
+}
 
- .text-darkest {
-     color: black;
- }
- 
- .text-light {
-     color: $light;
- }
+.z-down {
+    z-index: 100;
+}
 
-.text-lightest {
-     color:white;
- }
- 
- .text-main {
-    // color: $main-color;
- }
 
- .text-grey {
-     color: $grey;
- }
- 
- .text-bold {
-     font-weight: 600;
- }
- 
- .text-left {
-     text-align: left;
- }
- 
- .text-right {
-     text-align: right;
- }
- 
-.text-UP {text-transform: uppercase;}
-
- .text-note {
-     color: $grey;
-     font-style: italic;
-     font-size: 0.9286rem;
- }
- 
- .text-by {
-     //color: $main-color-dark;
-     margin: 20px 0px 0px;
- }
-
-.break-word{word-wrap:break-word;}
- /*------------------------------------*\
+/*------------------------------------*\
   #ALIGNMENTS_AND_MARGINS
 \*------------------------------------*/
- 
- .full-height {
-     height: 100%;
- }
- 
- .full-width {
-     width: 100%;
- }
- 
- .u-blockify {
-     display: block;
-     margin-top:10px;
- }
 
- .no-padding {
-     padding: 0px;
- }
+.no-padding {
+    padding: 0px;
+}
 
- .no-padding-top {
-     padding-top: 0px;
- }
+.no-padding-top {
+    padding-top: 0px;
+}
 
 .li-pad {
-    padding-bottom: 25px;
+    padding: 0 25px 15px 25px;
 }
  
- .no-margin {
-     margin: 0px;
- }
- 
- .no-margin-top {
-     margin-top: 0px;
- }
+
+.no-margin {
+    margin: 0px;
+}
+
+.no-margin-top {
+    margin-top: 0px;
+}
 
 .no-margin-bot {
-     margin-bottom: 0px;
- }
- 
-.min-margin-top {
-  margin-top: 3.7vh;  
-    @include breakpoint($min:xxs) { margin-top: 2vh;   }
+    margin-bottom: 0px;
 }
+
+.min-margin-top {
+    margin-top: 3.7vh;
+    @include breakpoint($min: xxs) {
+        margin-top: 2vh;
+    }
+}
+
 .sm-margin-top {
-     @include breakpoint($min:sm) { 
-         margin-top: 7vh;}
-     @include breakpoint($min:md) { 
-         margin-top: 7vh;}
-         
-         @include breakpoint ($min:xxs){margin-top: 0};
- }
+    @include breakpoint($min: sm) {
+        margin-top: 7vh;
+    }
+    @include breakpoint($min:md) {
+        margin-top: 7vh;
+    }
+    @include breakpoint ($min:xxs) {
+        margin-top: 0
+    }
+    ;
+}
 
 .sm-margin-tx {
-     
-     @include breakpoint($min:md) { 
-         margin-top: 7vh;}
-     @include breakpoint($min:lg) { 
-         margin-top: 7vh;}
-     @include breakpoint($min:xl) { 
-         margin-top: 7vh;}
-         
-         @include breakpoint ($min:xxs){margin-top: 0vh};
- }
+    @include breakpoint($min: md) {
+        margin-top: 7vh;
+    }
+    @include breakpoint($min:lg) {
+        margin-top: 7vh;
+    }
+    @include breakpoint($min:xl) {
+        margin-top: 7vh;
+    }
+    @include breakpoint ($min:xxs) {
+        margin-top: 0vh
+    }
+    ;
+}
 
-.sm-indent{ 
-    text-indent: 50px;}
-
-.quote-indent{ 
-    text-indent: 100px;
-//margin: 20px;
+.margin-bottom-lg {
+    @include breakpoint ($min: xl) {
+        margin-bottom: 25px;
+    }
 }
 
 
- .margin-bottom-lg {
-   
-       @include breakpoint ($min:xl){
-         margin-bottom: 25px;}
- }
+/*------------------------------------*\
+  #INDENTS
+\*------------------------------------*/
 
- .col-xxs-12 {
-     @media (max-width: 640px) {
-         flex-basis: 100%;
-         max-width: 100%;
-     }
- }
- 
+.sm-indent {
+    text-indent: 50px;
+}
+
+.quote-indent {
+    text-indent: 100px;
+}
+
+
+
+/*------------------------------------*\
+  #ORDER
+\*------------------------------------*/
+
+
  .order-xs-1st {
      order: 1;
      @media (min-width: 768px) {
-         order: 2;
+         order: 1;
      }
  }
  
  .order-xs-2nd {
      order: 2;
      @media (min-width: 768px) {
-         order: 1;
+         order: 3;
      }
  }
 
- .inline-d{
-    display: inline;
+ .order-xs-3rd {
+     order: 3;
+     @media (min-width: 768px) {
+         order: 2;
+     }
  }
-
- .flex-d{
-    display: flex;
+ 
+ .order-xs-4th {
+     order: 4;
+     @media (min-width: 768px) {
+         order: 4;
+     }
  }

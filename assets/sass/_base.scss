@@ -24,194 +24,64 @@
         display: none;
     }
     
-     
-    
-   ul li {
+    ul li {
         list-style-type: none;
         margin: 5px;
     }
-
-body{
-cursor:crosshair;
-   
+    
+    ul .title {
+        padding: 0;
+    }
+    
+    body {
+        cursor: crosshair;
+    }
+label{
+font-size: 1rem;
 }
-.color-1{
-    background:#5ef28b;
- border:4px solid $black;}
 
-.color-2{
-    background:rgba(94, 83, 229, 0.72);
- border:4px solid $black;}
-
-.color-3{
-    background:#259073;
- border:4px solid $black;}
-
-.color-4{ background:#EBEBEB;
- border:4px solid $black;}
-
-.color-5{ background:$black;
- border:4px solid $white;}
-
-/*------------------------------------*\
-  #COLOR_SECTIONS
+*:focus{
+outline:none;}
+    /*------------------------------------*\
+  #Responsive_window
 \*------------------------------------*/
- 
-//section that is substituting main funcitons of resizing
-.section-resized {
-    padding-top: $nav-size*2;
-    padding-bottom: 100px;
-    width: 960px;
-    max-width: 100%;
-    margin: auto;
-    @include breakpoint ($min: xxs) {
-        width: 300px;
-        max-width: 100%;
-    }
     
-    @include breakpoint ($min: xs) {
-        width: 380px;
+    //section that is substituting main funcitons of resizing
+    .section-resized {
+        padding-top: 50px*2;
+        padding-bottom: 100px;
+        width: 960px;
         max-width: 100%;
-    }
-    @include breakpoint ($min: sm) {
-        width: 480px;
-        max-width: 100%;
-    }
-    @include breakpoint ($min: md) {
-        width: 700px;
-        max-width: 100%;
-    }
-    @include breakpoint ($min: lg) {
-        width: 1100px;
-        max-width: 100%;
-    }
-    @include breakpoint ($min: xl) {
-        width: 1240px;
-        max-width: 100%;
-    }
-}
-
-.section-resized-extra {
-    @extend .section-resized;
-    min-height: 100vh;
-}
-
-
-/*------------------------------------*\
-#FONTS
-\*------------------------------------*/
-     
-
-    //responsive font sizes
-    .title {
-        font-family: TitleFont;
-        color: $black;
-        padding: 2vh 0 2vh;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        
-        
-        @include breakpoint($min: xxs) {
-            font-size: map-deep-get($typescale, 'heading1', 'xxs');
+        margin: auto;
+        @include breakpoint ($min: xxs) {
+            width: 300px;
+            max-width: 100%;
         }
-        @include breakpoint($min: xs) {
-            font-size: map-deep-get($typescale, 'heading1', 'xs');
+        @include breakpoint ($min: xs) {
+            width: 380px;
+            max-width: 100%;
         }
-        @include breakpoint($min:sm) {
-            font-size: map-deep-get($typescale, 'heading1', 'sm');
+        @include breakpoint ($min: sm) {
+            width: 480px;
+            max-width: 100%;
         }
-        @include breakpoint($min:md) {
-            font-size: map-deep-get($typescale, 'heading1', 'md');
+        @include breakpoint ($min: md) {
+            width: 700px;
+            max-width: 100%;
         }
-        @include breakpoint($min:lg) {
-            font-size: map-deep-get($typescale, 'heading1', 'lg');
+        @include breakpoint ($min: lg) {
+            width: 1100px;
+            max-width: 100%;
         }
-        @include breakpoint($min:xl) {
-            font-size: map-deep-get($typescale, 'heading1', 'lg');
-        }
-    }
-
-.semi-title {
-        font-family: TitleFont;
-        color: $black;
-        padding: 2vh 0 2vh;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        @include breakpoint($min: xs) {
-            font-size: map-deep-get($typescale, 'heading-semi', 'xs');
-        }
-        @include breakpoint($min:sm) {
-            font-size: map-deep-get($typescale, 'heading-semi', 'sm');
-        }
-        @include breakpoint($min:md) {
-            font-size: map-deep-get($typescale, 'heading-semi', 'md');
-        }
-        @include breakpoint($min:lg) {
-            font-size: map-deep-get($typescale, 'heading-semi', 'lg');
-        }
-        @include breakpoint($min:xl) {
-            font-size: map-deep-get($typescale, 'heading-semi', 'lg');
+        @include breakpoint ($min: xl) {
+            width: 1240px;
+            max-width: 100%;
         }
     }
     
-    .subtitle {
-        font-family: TitleFont;
-        color: $black;
-        @include breakpoint($min: xs) {
-            font-size: map-deep-get($typescale, 'sub1', 'xs');
-        }
-        @include breakpoint($min:sm) {
-            font-size: map-deep-get($typescale, 'sub1', 'sm');
-        }
-        @include breakpoint($min:md) {
-            font-size: map-deep-get($typescale, 'sub1', 'md');
-        }
-        @include breakpoint($min:lg) {
-            font-size: map-deep-get($typescale, 'sub1', 'lg');
-        }
-    }
-    
-    .text {
-        font-family: TextFont;
-         
-       @include breakpoint($min: xxs) {
-           font-size: map-deep-get($typescale, 'text1', 'xxs');}
-        @include breakpoint($min: xs) {
-            font-size: map-deep-get($typescale, 'text1', 'xs');
-        }
-        @include breakpoint($min:sm) {
-            font-size: map-deep-get($typescale, 'text1', 'sm');
-        }
-        @include breakpoint($min:md) {
-            font-size: map-deep-get($typescale, 'text1', 'md');
-        }
-        @include breakpoint($min:lg) {
-            font-size: map-deep-get($typescale, 'text1', 'lg');
-        }
-        
-        @include breakpoint($min:xl) {
-            font-size: map-deep-get($typescale, 'text1', 'xl');
-        }
-    }
-    
-    .smalltext {
-        font-family: SmallFont;
-        @include breakpoint($min: xs) {
-            font-size: map-deep-get($typescale, 'smalltext1', 'xs');
-        }
-        @include breakpoint($min:sm) {
-            font-size: map-deep-get($typescale, 'smalltext1', 'sm');
-        }
-        @include breakpoint($min:md) {
-            font-size: map-deep-get($typescale, 'smalltext1', 'md');
-        }
-        @include breakpoint($min:lg) {
-            font-size: map-deep-get($typescale, 'smalltext1', 'lg');
-        }
-    }
-
-    .testelinks{
-        color:#4ca7af;
+    .section-resized-extra {
+        @extend .section-resized;
+        min-height: 100vh;
     }
     /*------------------------------------*\
   #BODY
@@ -221,7 +91,7 @@ cursor:crosshair;
         min-height: 100%;
         height: auto;
         //background-color:$light;
-       // color: $black;
+        // color: $black;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         @extend .text;
@@ -237,104 +107,8 @@ cursor:crosshair;
         cursor: pointer;
         &:hover {
             text-decoration: none;
-            color:$black;
+            color: $black;
         }
     }
-
-    .gitpad{
-        padding:0;
-    }
-
-.icon{
-
-width: 30px;
-    @include breakpoint($min:xs) { 
     
-    width: 25px;}
-     
-
-
- @include breakpoint($min:xxs) { 
-    
-    width: 20px;}
-     
-}
-
-.p-height{
-    @include breakpoint($min:xs) { 
-    
-    left:88.5%;}
-    
-    @include breakpoint($min:xxs) { 
-    
-    left:87%;}
-    
-    
-     @include breakpoint($min:md) { 
-    
-    left:91%;}
    
-    position: fixed;
-    top:50%;
-    left:88%;
-}
-
-.p-height-left{
-   
-    
-     @include breakpoint($min:lg) { 
-    left:7%;
-     }
-      @include breakpoint($min:xl) { 
-    left:7%;
-     }
-      @include breakpoint($min:xs) { 
-    left:3%;
-    }
-     @include breakpoint($min:xs) { 
-    
-     }
-    
- 
-    position: fixed;
-    top:50%;
-    left:0%;
-}
-
-.ill{
-    width:100%;
-    height:100%;
-    margin:10px;
-}
-
-
-.pub{
-width:50%;
-    height:auto;
-    margin:10px;
-    opacity: 0.5;
-   
-    &:hover{ opacity: 1;}
-    padding-top: 50px;
-     @include breakpoint($min:xxs) { 
-        opacity: 0.8; 
-         width:90%;
-    
-    
-     }
-     @include breakpoint($min:xs) { 
-        opacity: 0.8; 
-         width:90%;
-    
-    
-     }
-  
-    
-     
-
-
-}
- 
-
-.margin-il{
-margin:20px;}
