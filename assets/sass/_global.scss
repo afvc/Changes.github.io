@@ -1,3 +1,14 @@
+//SPACING//
+$spacing--x-small: 0.3125rem; //5px;
+$spacing--small: 0.6250rem; //10px
+$spacing--medium: 0.9375rem; //15px
+$spacing--large: 1.250rem; //20px
+$spacing--x-large: 1.5625rem; //25px
+$spacing--xx-large: 1.875rem; //30px
+
+
+
+
 /* COLOR VARIABLES */
 
  
@@ -27,9 +38,13 @@ $purple: rgba(94, 83, 229, 0.72);
  border:10px solid $black;}
 
 .color-5{ background:$black;
- border:10px solid $white;}
+ border:10px solid $white;
+ 
+}
 
-.shadow{background:rgba(15, 15, 39, 0.02);
+.shadow
+{
+    background:rgba(15, 15, 39, 0.02);
 padding: 10px;}
 
 
